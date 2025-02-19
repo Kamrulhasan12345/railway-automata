@@ -6,15 +6,18 @@ import { defineConfig } from "vite";
 export default defineConfig({
 	plugins: [react(), tailwindcss()],
 	build: {
+		emptyOutDir: false,
+		outDir: "dist",
+		lib: {
+			formats: ["iife"],
+			entry: "background/index.ts",
+            name: "Railway Automata"
+		},
 		rollupOptions: {
-			input: {
-				popup: "popup/index.html",
-				background: "background/index.html",
-			},
 			output: {
-				entryFileNames: "[name]/[name].js",
+				entryFileNames: "background/background.js",
+				extend: true,
 			},
 		},
-		emptyOutDir: true,
 	},
 });

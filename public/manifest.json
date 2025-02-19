@@ -1,0 +1,17 @@
+{
+	"manifest_version": 3,
+	"name": "Railway Automata",
+	"author": "kamrulhasan59246@gmail.com",
+	"description": "Quickly access automations and departure times for Bangladesh Railway with Railway Automata.",
+	"homepage_url": "https://github.com/Kamrulhasan12345/railway-automata",
+	"version": "1.0.0",
+	"background": {
+		"service_worker": "./background/background.js",
+		"type": "module"
+	},
+	"action": {
+		"default_popup": "./popup/index.html",
+		"default_title": "Open the popup"
+	},
+	"permissions": []
+}
