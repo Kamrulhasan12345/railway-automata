@@ -1,8 +1,8 @@
 {
-  "name": "railway-automata",
-  "private": true,
-  "version": "1.0.0",
-  "type": "module",
+	"name": "railway-automata",
+	"private": true,
+	"version": "1.0.0",
+	"type": "module",
 	"scripts": {
 		"clean": "rimraf dist",
 		"dev": "vite",
@@ -24,35 +24,39 @@
 		"compile:tsc": "tsc -b",
 		"compile:vite": "run-p compile:vite:*",
 		"compile:vite:web": "vite build",
+		"watch:chrome": "run-p watch:all:* watch:chrome:script",
+		"watch:firefox": "run-p watch:chrome:*",
+		"watch:all:web": "npm run compile:vite:web -- --watch",
+		"watch:chrome:script": "sleep 1 && npm run build:chrome:script -- --watch",
 		"lint": "eslint .",
 		"preview": "vite preview"
 	},
-  "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.19.0",
-    "@tailwindcss/vite": "^4.0.7",
-    "@types/node": "^22.13.4",
-    "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3",
-    "@types/webextension-polyfill": "^0.12.1",
-    "@vitejs/plugin-react": "^4.3.4",
-    "crx": "^5.0.1",
-    "eslint": "^9.19.0",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-react-refresh": "^0.4.18",
-    "globals": "^15.14.0",
-    "npm-run-all": "^4.1.5",
-    "release-it": "^18.1.2",
-    "replace": "^1.2.2",
-    "rimraf": "^6.0.1",
-    "tailwindcss": "^4.0.7",
-    "typescript": "~5.7.2",
-    "typescript-eslint": "^8.22.0",
-    "vite": "^6.1.0",
-    "web-ext": "^8.4.0",
-    "webextension-polyfill": "^0.12.0"
-  }
+	"dependencies": {
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.19.0",
+		"@tailwindcss/vite": "^4.0.7",
+		"@types/node": "^22.13.4",
+		"@types/react": "^19.0.8",
+		"@types/react-dom": "^19.0.3",
+		"@types/webextension-polyfill": "^0.12.1",
+		"@vitejs/plugin-react": "^4.3.4",
+		"crx": "^5.0.1",
+		"eslint": "^9.19.0",
+		"eslint-plugin-react-hooks": "^5.0.0",
+		"eslint-plugin-react-refresh": "^0.4.18",
+		"globals": "^15.14.0",
+		"npm-run-all": "^4.1.5",
+		"release-it": "^18.1.2",
+		"replace": "^1.2.2",
+		"rimraf": "^6.0.1",
+		"tailwindcss": "^4.0.7",
+		"typescript": "~5.7.2",
+		"typescript-eslint": "^8.22.0",
+		"vite": "^6.1.0",
+		"web-ext": "^8.4.0",
+		"webextension-polyfill": "^0.12.0"
+	}
 }
