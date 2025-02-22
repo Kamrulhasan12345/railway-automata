@@ -7,11 +7,11 @@ interface TitleProps {
 export default function Title({ title }: TitleProps) {
 	return (
 		<>
-			<div className="flex flex-start justify-center items-center">
+			<div className="flex flex-start justify-start items-center">
 				<div className="flex items-center justify-center">
-					<img src={railwayLogo} />
+					<img src={railwayLogo} width={48} />
 				</div>
-				<div className="text-2xl text-[#da924e]">{title}</div>
+				<div className="text-xl text-[#da924e] font-bold ml-2">{title}</div>
 			</div>
 		</>
 	);
