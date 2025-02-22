@@ -1,9 +1,7 @@
-import NavBar from "./Nav"
+import Home from "./pages/Home";
 
 const App = () => {
-    return (
-        <NavBar />
-    )
-}
+	return <Home />;
+};
 
-export default App
+export default App;
