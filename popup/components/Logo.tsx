@@ -7,7 +7,7 @@ export default function Logo() {
 				<div className="flex items-center justify-center">
 					<img src={railwayLogo} />
 				</div>
-				<div className="text-3xl text-[#da924e] text-center">
+				<div className="text-3xl text-[#da924e] text-center font-bold">
 					Bangladesh Railway
 				</div>
 				<div className="text-sm text-[#006747] text-center">
