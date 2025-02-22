@@ -4,7 +4,7 @@ export default function Logo() {
 	return (
 		<>
 			<div className="flex flex-col">
-				<div className="flex items-center">
+				<div className="flex items-center justify-center">
 					<img src={railwayLogo} />
 				</div>
 				<div className="text-3xl text-[#da924e] text-center">

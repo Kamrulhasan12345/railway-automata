@@ -3,16 +3,12 @@ import Logo from "../components/Logo";
 export default function Home() {
 	return (
 		<>
-			<div className="flex flex-col">
+			<div className="flex flex-col items-center justify-center h-[100vh]">
 				<Logo />
-				<div>
-					<a href="" className="text-[#804600]">
-						Automations
-					</a>
+				<div className="text-center text-[#804600]">
+					<a href="">Automations</a>
 					<span>.</span>
-					<a href="" className="text-[#804600]">
-						Departures
-					</a>
+					<a href="">Departures</a>
 				</div>
 			</div>
 		</>
