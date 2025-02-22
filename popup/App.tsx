@@ -1,7 +1,9 @@
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
+// import Login from "./pages/Login";
+import OutsideBangladesh from "./pages/OutsideBangladesh";
 
 const App = () => {
-	return <Home />;
+	return <OutsideBangladesh />;
 };
 
 export default App;
