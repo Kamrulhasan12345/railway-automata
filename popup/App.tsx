@@ -1,10 +1,11 @@
-// import Home from "./pages/Home";
-// import Login from "./pages/Login";
-// import OutsideBangladesh from "./pages/OutsideBangladesh";
-import Departures from "./pages/Departures";
+import { Outlet } from "react-router-dom";
 
 const App = () => {
-	return <Departures />;
+	return (
+		<>
+			<Outlet />
+		</>
+	);
 };
 
 export default App;
