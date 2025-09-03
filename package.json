@@ -55,7 +55,7 @@
 		"rimraf": "^6.0.1",
 		"tailwindcss": "^4.0.7",
 		"typescript": "~5.7.2",
-		"typescript-eslint": "^8.22.0",
+		"typescript-eslint": "^8.42.0",
 		"vite": "^6.1.0",
 		"web-ext": "^8.4.0",
 		"webextension-polyfill": "^0.12.0"
